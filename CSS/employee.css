@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+
+    background-color: #111827;
+    color: white;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    padding: 25px 20px;
+}
+
+.logo {
+    padding: 10px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #374151;
+}
+
+.logo h2 {
+    font-size: 28px;
+}
+
+.logo p {
+    color: #9ca3af;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.menu a {
+    display: block;
+
+    color: #d1d5db;
+    text-decoration: none;
+
+    padding: 14px;
+    margin-bottom: 8px;
+
+    border-radius: 6px;
+}
+
+.menu a:hover {
+    background-color: #1f2937;
+}
+
+.menu .active {
+    background-color: #2563eb;
+    color: white;
+}
+
+.logout {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    right: 20px;
+}
+
+.logout a {
+    display: block;
+
+    color: #fca5a5;
+    text-decoration: none;
+
+    padding: 14px;
+}
+
+
+/* Main */
+
+.main {
+    margin-left: 240px;
+}
+
+
+/* Header */
+
+.header {
+    height: 90px;
+
+    background-color: white;
+
+    border-bottom: 1px solid #ddd;
+
+    padding: 25px 35px;
+}
+
+.header h1 {
+    font-size: 28px;
+}
+
+
+/* Content */
+
+.content {
+    padding: 30px;
+}
+
+
+/* Form */
+
+.form-box {
+    background-color: white;
+
+    width: 700px;
+
+    padding: 30px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-box h2 {
+    font-size: 20px;
+}
+
+.form-box > p {
+    color: #6b7280;
+    font-size: 13px;
+
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: block;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 7px;
+    margin-top: 18px;
+}
+
+form input,
+form select {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 13px;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    margin-top: 25px;
+
+    padding: 12px 20px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}

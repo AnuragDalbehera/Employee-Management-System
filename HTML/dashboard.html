@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h2>EMS</h2>
+            <p>Employee Management</p>
+        </div>
+
+        <div class="menu">
+
+            <a href="dashboard.html" class="active">
+                Dashboard
+            </a>
+
+            <a href="add-employee.html">
+                Add Employee
+            </a>
+
+            <a href="../PHP/view-employee.php">
+                View Employees
+            </a>
+
+        </div>
+
+        <div class="logout">
+            <a href="../PHP/logout.php">
+                Logout
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="main">
+
+        <div class="header">
+
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome to Employee Management System.</p>
+            </div>
+
+            <div class="admin">
+
+                <div class="profile">
+                    A
+                </div>
+
+                <div>
+                    <b>Admin</b>
+                    <p>Administrator</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="content">
+
+            <div class="cards">
+
+                <div class="card">
+                    <p>Total Employees</p>
+                    <h2>120</h2>
+                </div>
+
+                <div class="card">
+                    <p>Active Employees</p>
+                    <h2>105</h2>
+                </div>
+
+                <div class="card">
+                    <p>On Leave</p>
+                    <h2>10</h2>
+                </div>
+
+                <div class="card">
+                    <p>Inactive Employees</p>
+                    <h2>5</h2>
+                </div>
+
+            </div>
+
+
+            <div class="section">
+
+                <h2>Quick Actions</h2>
+
+                <p>Manage your employees quickly.</p>
+
+                <div class="actions">
+
+                    <a href="add-employee.html">
+
+                        <h3>Add Employee</h3>
+
+                        <p>
+                            Add a new employee to the system.
+                        </p>
+
+                    </a>
+
+
+                    <a href="../PHP/view-employee.php">
+
+                        <h3>View Employees</h3>
+
+                        <p>
+                            View all employee records.
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="section">
+
+                <div class="section-title">
+
+                    <div>
+                        <h2>Recent Employees</h2>
+                        <p>Recently added employees.</p>
+                    </div>
+
+                    <a href="../PHP/view-employee.php">
+                        View All
+                    </a>
+
+                </div>
+
+                <p>
+                    Go to View Employees to see the latest employee records.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

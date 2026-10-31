@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Add Employee</title>
+
+    <link rel="stylesheet" href="../CSS/employee.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h2>EMS</h2>
+            <p>Employee Management</p>
+        </div>
+
+        <div class="menu">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="add-employee.html" class="active">
+                Add Employee
+            </a>
+
+            <a href="../PHP/view-employee.php">
+                View Employees
+            </a>
+
+        </div>
+
+        <div class="logout">
+
+            <a href="../PHP/logout.php">
+                Logout
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="main">
+
+        <div class="header">
+
+            <h1>Add Employee</h1>
+
+        </div>
+
+
+        <div class="content">
+
+            <div class="form-box">
+
+                <h2>Employee Information</h2>
+
+                <p>Add a new employee to the system.</p>
+
+
+                <form action="../PHP/add-employee.php" method="POST" onsubmit="return validateForm()">
+
+                    <label>Employee ID</label>
+
+                    <input
+                        type="text"
+                        name="employee_id"
+                        id="employee_id"
+                        placeholder="Enter employee ID"
+                    >
+
+
+                    <label>Name</label>
+
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter employee name"
+                    >
+
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter email"
+                    >
+
+
+                    <label>Phone</label>
+
+                    <input
+                        type="text"
+                        name="phone"
+                        id="phone"
+                        placeholder="Enter phone number"
+                    >
+
+
+                    <label>Department</label>
+
+                    <select name="department">
+
+                        <option value="">Select Department</option>
+
+                        <option value="IT">
+                            IT
+                        </option>
+
+                        <option value="HR">
+                            HR
+                        </option>
+
+                        <option value="Finance">
+                            Finance
+                        </option>
+
+                        <option value="Marketing">
+                            Marketing
+                        </option>
+
+                    </select>
+
+
+                    <label>Position</label>
+
+                    <input
+                        type="text"
+                        name="position"
+                        placeholder="Enter position"
+                    >
+
+
+                    <label>Status</label>
+
+                    <select name="status">
+
+                        <option value="Active">
+                            Active
+                        </option>
+
+                        <option value="Inactive">
+                            Inactive
+                        </option>
+
+                        <option value="On Leave">
+                            On Leave
+                        </option>
+
+                    </select>
+
+
+                    <button type="submit">
+                        Add Employee
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="../JS/employee.js"></script>
+
+</body>
+</html>
